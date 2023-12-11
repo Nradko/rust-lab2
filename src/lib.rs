@@ -1,5 +1,6 @@
 use std::path::PathBuf;
 
+/// provided 'path' to the file prints Min('n', file_line_count) first lines of the file.
 pub fn head(path: &PathBuf, n: u32) -> std::io::Result<()> {
     let mut line_count: u32 = 0;
     for _ in read_lines(path)? {
@@ -19,6 +20,7 @@ pub fn head(path: &PathBuf, n: u32) -> std::io::Result<()> {
     Ok(())
 }
 
+/// provided 'path' to the file prints Min('n', file_line_count) last lines of the file.
 pub fn tail(path: &PathBuf, n: u32) -> std::io::Result<()> {
     let mut line_count: u32 = 0;
     for _ in read_lines(path)? {

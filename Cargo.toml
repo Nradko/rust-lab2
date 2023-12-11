@@ -2,7 +2,7 @@ workspace = { members = ["test-lib"] }
 [package]
 name = "uj_tcs_rust_23_18"
 authors = ["Konrad Wierzbik <konrad.wierzbik@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "fun head and tail that print n firstl/ last lines"
